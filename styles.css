@@ -1,4 +1,16 @@
 .block {
-    outline: 2px solid #000;
+    outline: 1px solid #000;
     border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.t {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 400px;
+    flex-shrink: 1;
+    flex-grow: 0;
 }
