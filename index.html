@@ -12,6 +12,8 @@
         <!-- Стартовый полноэкранный блок -->
         <div id="start-block">
             <img src="https://i.gifer.com/6oa.gif">
+            Галеев Руслан
+
         </div>
 
         <!-- Шапка -->
@@ -101,6 +103,21 @@
                 Контакты:
             </div>
         </footer>
+
+
+        <script>
+            function background(e)
+            {
+                let x = (window.innerWidth - e.pageX) / 10;
+
+                console.log(x);
+
+                document.getElementById("start-block").style.backgroundPositionX = x + "px";
+            }
+
+
+            document.addEventListener("mousemove", background);
+        </script>
 
 
         <script>
