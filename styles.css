@@ -8,9 +8,8 @@
 }
 
 
-html body {
+html, body {
     height: 100%;
-    display: block;
 }
 
 
@@ -29,27 +28,4 @@ section {
     flex-basis: 400px;
     flex-shrink: 1;
     flex-grow: 0;
-}
-
-
-.social-icons {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-}
-
-.social-icons a {
-    display: block;
-    position: relative;
-    background-color: #121212;
-    transition: background-color .3s ease-in-out;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 0.25rem;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
