@@ -1,0 +1,60 @@
+header {
+    overflow: hidden;
+    background-color: #d2d2d2;
+    padding: 20px 10px;
+
+    transition: all 0.8s;
+
+    /* Самый верхний слой */
+    z-index: 999999;
+}
+
+/* Стиль элементов шапки */
+header h3,
+header button {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 25px;
+    border-radius: 4px;
+    background-color: #d2d2d2;
+    transition: all 0.8s;
+}
+
+@media (max-width: 800px) {
+    header button {
+        float: center;
+        display: block;
+        text-align: center;
+    }
+
+    header h3 {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+/* Стиль таймера */
+header #timer {
+    font-weight: bold;
+}
+
+/* Изменение цвета фона при наведении курсора */
+header button:hover {
+    background-color: #c8c8c8;
+}
+
+/* Сдвиг секции с кнопками вправо */
+header .header-right {
+    float: right;
+    display: inline-block;
+}
+
+/* Привязанная шапка */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}

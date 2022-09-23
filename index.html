@@ -4,12 +4,25 @@
         <meta charset="UTF-8">
         <title>Title</title>
 
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./css/start_block.css">
+        <link rel="stylesheet" href="./css/header.css">
     </head>
     <body>
         <!-- Стартовый полноэкранный блок -->
         <div id="start-block">
             123
+
+            <div class="social">
+                <ul class="social-icons">
+                    <li>a<a class="social-icon-github shake"
+                           href="https://github.com/GRusl" title="..." target="_blank" rel="noopener"></a></li>
+                    <li>b<a class="social-icon-vk shake"
+                           href="https://vk.com/ya4lex" title="..." target="_blank" rel="noopener"></a></li>
+                    <li>c<a class="social-icon-telegram shake"
+                           href="https://telegram.me/ya4lex" title="..." target="_blank" rel="noopener"></a></li>
+                </ul>
+            </div>
         </div>
 
         <!-- Шапка -->
@@ -99,5 +112,26 @@
                 Контакты:
             </div>
         </footer>
+
+
+        <script>
+            const header = document.getElementsByTagName("header")[0];  // Получаем шапку
+            var position = 0;  // Позиция прилипания шапки
+
+
+            function header_logic() {
+                if (window.pageYOffset >= header.offsetTop && header.offsetTop != 0)  // Шапка должна прилипнуть?
+                {
+                    position = header.offsetTop;
+                    header.classList.add("sticky");
+                } else if (position > window.pageYOffset)  // Шапка должна отлипнуть?
+                {
+                    header.classList.remove("sticky");
+                }
+            }
+
+
+            window.addEventListener("scroll", header_logic);  // Привязка события при скроле
+        </script>
     </body>
 </html>
