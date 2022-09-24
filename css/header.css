@@ -58,6 +58,7 @@ header button:hover {
 }
 
 /* Сдвиг секции с кнопками вправо */
+header > button,
 header .header-right {
     float: right;
     display: inline-block;
