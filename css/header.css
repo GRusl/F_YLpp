@@ -1,7 +1,8 @@
 header {
     overflow: hidden;
     background-color: #000000;
-    padding: 20px 10px;
+    color: #ffffff;
+    padding: 10px 10px;
 
     transition: all 0.8s;
 
@@ -11,8 +12,25 @@ header {
     border-radius: 0 0 20px 20px;
 }
 
+
+/* Привязанная шапка */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    /*
+    background-color: #ffffff;
+    color: #000000;
+    */
+
+    border-radius: 0;
+
+    outline: 1px solid #000;
+}
+
+
 /* Стиль элементов шапки */
-header h3,
 header button {
     float: left;
     text-align: center;
@@ -21,27 +39,18 @@ header button {
     font-size: 25px;
     line-height: 25px;
     border-radius: 4px;
-    background-color: #d2d2d2;
+    background-color: rgba(0, 0, 0, 0.92);
     transition: all 0.8s;
+
+    color: #ffffff;
 }
 
-@media (max-width: 800px) {
-    header button {
-        float: center;
-        display: block;
-        text-align: center;
-    }
 
-    header h3 {
-        font-size: 15px;
-        text-align: center;
-    }
+header > img {
+    height: 50px;
+    width: 50px;
 }
 
-/* Стиль таймера */
-header #timer {
-    font-weight: bold;
-}
 
 /* Изменение цвета фона при наведении курсора */
 header button:hover {
@@ -52,12 +61,4 @@ header button:hover {
 header .header-right {
     float: right;
     display: inline-block;
-}
-
-/* Привязанная шапка */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #d7d5d5;
 }
