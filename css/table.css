@@ -1,0 +1,18 @@
+.table {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 500px;
+    flex-shrink: 1;
+    flex-grow: 0;
+
+    transform-style: preserve-3d;
+}
+
+
+.table .table-item {
+    width: 350px;
+    margin: 20px;
+    outline: 1px solid rgba(0, 0, 0, 0);
+    text-align: center;
+}

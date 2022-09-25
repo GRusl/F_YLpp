@@ -1,7 +1,10 @@
 *, *:before, *:after {
     padding: 0;
     margin: 0;
+    /*
     border: 0;
+    */
+
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -17,19 +20,18 @@ html, body {
 }
 
 
+hr {
+    color: var(--color-text);
+
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
 main .main-block {
     outline: 1px solid var(--color-text);
     border-radius: 10px;
     margin: 10px 20% 10px 20%;
     padding: 10px;
-}
-
-
-.t {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-basis: 400px;
-    flex-shrink: 1;
-    flex-grow: 0;
 }
