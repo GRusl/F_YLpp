@@ -61,3 +61,7 @@ header .header-right {
     float: right;
     display: inline-block;
 }
+
+.active {
+    height: 100px;
+}
