@@ -27,6 +27,13 @@
     <link rel="stylesheet" href="./css/flipping_card.css">
 
     <link rel="stylesheet" href="./css/project_card.css">
+
+    <!-- Быстрый переход между блоками -->
+    <script src="./js/rewind.js" defer></script>
+
+    <!-- Иконки -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"/>
   </head>
   <body>
     <!-- Стартовый полноэкранный блок -->
@@ -40,32 +47,43 @@
       <img src="https://i.gifer.com/6oa.gif" alt="icon">
 
       <nav class="rewind header-right">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
+        <button value="about-me" class="material-symbols-outlined">
+          person
+        </button>
+        <button value="skills" class="material-symbols-outlined">
+          emoji_food_beverage
+        </button>
+        <button value="skills" class="material-symbols-outlined">
+          draft
+        </button>
+        <button value="projects" class="material-symbols-outlined">
+          data_object
+        </button>
       </nav>
-      <button id="switch_mode"><img src="./img/icons/mode.svg" alt="mode"></button>
+      <button id="switch_mode" class="material-symbols-outlined header-right">
+        brightness_4
+      </button>
     </header>
     <div id="header"></div>
 
     <!-- Основной блок -->
     <main>
-      <section class="main-block anim-items">
-        <h1>Обо мне</h1>
+      <section id="about-me" class="main-block">
+        <h1 class="anim-items">Обо мне</h1>
         <hr>
-        <p>Со второго класса начал увлекаться робототехникой, а в восьмом параллельно начал
+        <p class="anim-items">Со второго класса начал увлекаться робототехникой, а в восьмом параллельно начал
           учить python3, однако хорошо стал его понимать только после поступления в
           Яндекс.Лицей. Сейчас активно применяю знания языка в проектной и олимпиадой
           деятельности.</p>
         <br>
-        <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A63b7fb842c90a4094722221c1c31e03d73bf1422a65faf315378c8c69812a224&amp;source=constructor" height="400" width="100%"></iframe>
+        <iframe class="map anim-items" src="https://yandex.ru/map-widget/v1/?um=constructor%3A63b7fb842c90a4094722221c1c31e03d73bf1422a65faf315378c8c69812a224&amp;source=constructor" height="400" width="100%"></iframe>
       </section>
 
-      <section class="main-block anim-items" id="a">
-        <h1>Soft&Hard Skills</h1>
+      <section id="skills" class="main-block">
+        <h1 class="anim-items">Soft&Hard Skills</h1>
         <hr>
         <div class="table">
-          <div class="table-item looking-card">
+          <div class="table-item looking-card anim-items">
             <div class="looking-card__inner">
               <h2>Многозадачность</h2>
               <hr>
@@ -74,7 +92,7 @@
               постоянного переклучения между делами, с чем я прекрастно справляюсь!
             </div>
           </div>
-          <div class="table-item looking-card">
+          <div class="table-item looking-card anim-items">
             <div class="looking-card__inner">
               <h2>Используемое ПО</h2>
               <hr>
@@ -84,14 +102,14 @@
               </ul>
             </div>
           </div>
-          <div class="table-item looking-card">
+          <div class="table-item looking-card anim-items">
             <div class="looking-card__inner">
               <h2>Легкообучаемость</h2>
               <hr>
               Придя к новым для меня задачам быстро разбираюсь в теме
             </div>
           </div>
-          <div class="table-item looking-card">
+          <div class="table-item looking-card anim-items">
             <div class="looking-card__inner">
               <h2>Умение делать все в срок</h2>
               <hr>
@@ -123,25 +141,25 @@
       </section>
       -->
 
-      <section class="main-block anim-items">
+      <section id="projects" class="main-block">
         <h1>Немного проектов</h1>
         <hr>
         <div class="table">
-          <div class="table-item project-card">
+          <div class="table-item project-card anim-items">
             <img src="./img/project/ps.png" alt="">
             <h2>Камень, ножницы, бумага</h2>
             <hr>
             <p>В данном проекте я тестировал PyScript (JavaScript лучше)</p>
           </div>
 
-          <div class="table-item project-card">
+          <div class="table-item project-card anim-items">
             <img src="./img/project/op.png" alt="">
             <h2>Старая верстка</h2>
             <hr>
             <p>Проект (какой-то) показывающий мои навыки один год назад</p>
           </div>
 
-          <div class="table-item project-card">
+          <div class="table-item project-card anim-items">
             <img src="./img/project/vf.png" alt="">
             <h2>Верстка по шаблону Figma</h2>
             <hr>

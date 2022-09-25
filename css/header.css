@@ -29,7 +29,8 @@ header {
 
 
 /* Стиль элементов шапки */
-header button {
+header button,
+header nav button {
     float: left;
     text-align: center;
     padding: 12px;
@@ -37,7 +38,7 @@ header button {
     font-size: 25px;
     line-height: 25px;
     border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.92);
+    background-color: #141414;
     transition: all 0.8s;
 
     color: #ffffff;
@@ -52,16 +53,17 @@ header > img {
 
 /* Изменение цвета фона при наведении курсора */
 header button:hover {
-    background-color: #c8c8c8;
+    background-color: #181818;
 }
 
-/* Сдвиг секции с кнопками вправо */
-header > button,
+
+/* Сдвиг секции header-right вправо */
 header .header-right {
     float: right;
     display: inline-block;
 }
 
+
 .active {
-    height: 100px;
+    height: 74px;
 }

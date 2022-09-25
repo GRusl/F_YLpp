@@ -1,6 +1,6 @@
 const anim_items = document.querySelectorAll(".anim-items");  // Получение всех элементов для анимации
 
-const start = 6;  // k старта
+const start = 10000;  // k старта
 
 
 function ofset(el)  // Получение значений позиции
