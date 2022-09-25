@@ -29,6 +29,16 @@ hr {
 }
 
 
+a {
+    color: var(--color-text); /* Цвет ссылок */
+}
+a:visited {
+    color: var(--color-text); /* Цвет посещенных ссылок */
+}
+a:active {
+    color: var(--color-text); /* Цвет активных ссылок */
+}
+
 main .main-block {
     /*
     outline: 1px solid var(--color-text);

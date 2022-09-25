@@ -19,16 +19,17 @@
     backface-visibility: hidden;
     position: absolute;
     transition: transform .6s linear;
+    border-radius: 10px;
 }
 
 .front{
     transform: perspective(600px) rotateY(0deg);
+    outline: 2px solid var(--color2);
 }
 
 .back{
     transform: perspective(600px) rotateY(180deg);
     background-color: var(--color2);
-    border-radius: 10px;
 }
 
 .front img {
@@ -36,6 +37,7 @@
 }
 
 .content{
+    padding: 10px;
     width: 100%;
     text-align: center;
 }
