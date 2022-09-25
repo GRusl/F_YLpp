@@ -4,8 +4,6 @@ header {
     color: #ffffff;
     padding: 10px 10px;
 
-    transition: all 0.8s;
-
     /* Самый верхний слой */
     z-index: 999999;
 
@@ -24,9 +22,9 @@ header {
     color: #000000;
     */
 
-    border-radius: 0;
+    transition: all 0.8s;
 
-    outline: 1px solid #000;
+    border-radius: 0;
 }
 
 

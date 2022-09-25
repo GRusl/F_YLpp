@@ -6,7 +6,7 @@ let mode = document.getElementById("theme");
 
 document.getElementById("switch_mode").onclick = function ()  // Переключение темы при нажатии на кнопку
 {
-    theme.href = (theme.getAttribute("href") === mode_dark)?mode_light:mode_dark;
+    mode.href = (mode.getAttribute("href") === mode_dark)?mode_light:mode_dark;
 }
 
 

@@ -10,6 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: none;
 }
 
 #start-block > h1 {
