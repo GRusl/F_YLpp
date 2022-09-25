@@ -1,123 +1,160 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
 
-        <link rel="stylesheet" type="text/css" href="./css/mode/light.css" id="theme">
-        <script src="./js/mode.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="./css/mode/light.css" id="theme">
+    <script src="./js/mode.js" defer></script>
 
-        <!-- Анимации -->
-        <script src="./js/anim.js" defer></script>
-        <link rel="stylesheet" href="./css/anim.css">
+    <!-- Анимации -->
+    <script src="./js/anim.js" defer></script>
+    <link rel="stylesheet" href="./css/anim.css">
 
-        <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css">
 
-        <link rel="stylesheet" href="./css/start_block.css">
-        <script src="./js/start_block.js" defer></script>
+    <link rel="stylesheet" href="./css/start_block.css">
+    <script src="./js/start_block.js" defer></script>
 
-        <link rel="stylesheet" href="./css/header.css">
-        <script src="./js/header.js" defer></script>
+    <link rel="stylesheet" href="./css/header.css">
+    <script src="./js/header.js" defer></script>
 
-        <link rel="stylesheet" href="./css/looking_card.css">
-        <script src="./js/looking_card.js" defer></script>
+    <link rel="stylesheet" href="./css/looking_card.css">
+    <script src="./js/looking_card.js" defer></script>
 
-        <link rel="stylesheet" href="./css/table.css">
-    </head>
-    <body>
-        <!-- Стартовый полноэкранный блок -->
-        <div id="start-block">
-            <!-- <img src="https://i.gifer.com/6oa.gif"> -->
-            <h1>Galeev Ruslan</h1>
-        </div>
+    <link rel="stylesheet" href="./css/table.css">
 
-        <!-- Шапка -->
-        <header>
-            <img src="https://i.gifer.com/6oa.gif" alt="icon">
+    <link rel="stylesheet" href="./css/flipping_card.css">
 
-            <nav class="rewind header-right">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-            </nav>
-            <button id="switch_mode"><img src="./img/icons/mode.svg" alt="mode"></button>
-        </header>
+    <link rel="stylesheet" href="./css/project_card.css">
+  </head>
+  <body>
+    <!-- Стартовый полноэкранный блок -->
+    <div id="start-block">
+      <!-- <img src="https://i.gifer.com/6oa.gif"> -->
+      <h1>Galeev Ruslan</h1>
+    </div>
 
-        <!-- Основной блок -->
-        <main>
-            <section class="main-block anim-items">
-                <h1>Обо мне</h1>
-                <hr>
-                <p>Со второго класса начал увлекаться робототехникой, а в восьмом параллельно начал
-                    учить python3, однако хорошо стал его понимать только после поступления в
-                    Яндекс.Лицей. Сейчас активно применяю знания языка в проектной и олимпиадой
-                    деятельности.</p>
-                <br>
-                <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A63b7fb842c90a4094722221c1c31e03d73bf1422a65faf315378c8c69812a224&amp;source=constructor" height="400" width="100%"></iframe>
-            </section>
+    <!-- Шапка -->
+    <header>
+      <img src="https://i.gifer.com/6oa.gif" alt="icon">
 
-            <section class="main-block anim-items" id="a">
-                <h1>Soft&Hard Skills</h1>
-                <hr>
-                <div class="table">
-                    <div class="table-item looking-card">
-                        <div class="looking-card__inner">
-                            <h2>Многозадачность</h2>
-                            <hr>
-                            Обучение в Яндекс.Лицее, а также постоянное участие в различных
-                            олимпиадах и конкурсах, зачастую проходящих в одно время, требуют от меня
-                            постоянного переклучения между делами, с чем я прекрастно справляюсь!
-                        </div>
-                    </div>
-                    <div class="table-item looking-card">
-                        <div class="looking-card__inner">
-                            <h2>Используемое ПО</h2>
-                            <hr>
-                            <ul>
-                                <li>WebStorm</li>
-                                <li>Sublime Text</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="table-item looking-card">
-                        <div class="looking-card__inner">
-                            <h2>Легкообучаемость</h2>
-                            <hr>
-                            Придя к новым для меня задачам быстро разбираюсь в теме
-                        </div>
-                    </div>
-                    <div class="table-item looking-card">
-                        <div class="looking-card__inner">
-                            <h2>Умение делать все в срок</h2>
-                            <hr>
-                            Я легко могу найти время чтобы вовремя выполнить все задачи
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <nav class="rewind header-right">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+      </nav>
+      <button id="switch_mode"><img src="./img/icons/mode.svg" alt="mode"></button>
+    </header>
 
-            <section class="main-block anim-items">
-                <h1>Обо мне</h1>
-                <hr>
-                В целом, конечно, синтетическое тестирование однозначно фиксирует необходимость форм воздействия.
-                Банальные, но неопровержимые выводы, а также непосредственные участники технического прогресса,
-                превозмогая сложившуюся непростую экономическую ситуацию, призваны к ответу. Безусловно,
-                семантический разбор внешних противодействий создаёт необходимость включения в производственный
-                план целого ряда внеочередных мероприятий с учётом комплекса новых принципов формирования
-                материально-технической и кадровой базы.
-                В целом, конечно, синтетическое тестирование однозначно фиксирует необходимость форм воздействия.
-                Банальные, но неопровержимые выводы, а также непосредственные участники технического прогресса,
-                превозмогая сложившуюся непростую экономическую ситуацию, призваны к ответу. Безусловно,
-                семантический разбор внешних противодействий создаёт необходимость включения в производственный
-                план целого ряда внеочередных мероприятий с учётом комплекса новых принципов формирования
-                материально-технической и кадровой базы.
-            </section>
-        </main>
+    <!-- Основной блок -->
+    <main>
+      <section class="main-block anim-items">
+        <h1>Обо мне</h1>
+        <hr>
+        <p>Со второго класса начал увлекаться робототехникой, а в восьмом параллельно начал
+          учить python3, однако хорошо стал его понимать только после поступления в
+          Яндекс.Лицей. Сейчас активно применяю знания языка в проектной и олимпиадой
+          деятельности.</p>
+        <br>
+        <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A63b7fb842c90a4094722221c1c31e03d73bf1422a65faf315378c8c69812a224&amp;source=constructor" height="400" width="100%"></iframe>
+      </section>
 
-        <footer>
-            <div>
-                Контакты:
+      <section class="main-block anim-items" id="a">
+        <h1>Soft&Hard Skills</h1>
+        <hr>
+        <div class="table">
+          <div class="table-item looking-card">
+            <div class="looking-card__inner">
+              <h2>Многозадачность</h2>
+              <hr>
+              Обучение в Яндекс.Лицее, а также постоянное участие в различных
+              олимпиадах и конкурсах, зачастую проходящих в одно время, требуют от меня
+              постоянного переклучения между делами, с чем я прекрастно справляюсь!
             </div>
-        </footer>
-    </body>
+          </div>
+          <div class="table-item looking-card">
+            <div class="looking-card__inner">
+              <h2>Используемое ПО</h2>
+              <hr>
+              <ul>
+                <li>WebStorm</li>
+                <li>Sublime Text</li>
+              </ul>
+            </div>
+          </div>
+          <div class="table-item looking-card">
+            <div class="looking-card__inner">
+              <h2>Легкообучаемость</h2>
+              <hr>
+              Придя к новым для меня задачам быстро разбираюсь в теме
+            </div>
+          </div>
+          <div class="table-item looking-card">
+            <div class="looking-card__inner">
+              <h2>Умение делать все в срок</h2>
+              <hr>
+              Я легко могу найти время чтобы вовремя выполнить все задачи
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+      <section class="main-block anim-items">
+        <h1>Достижения Яндекс.Лицея</h1>
+        <hr>
+        <div class="table">
+
+          <div class="table-item flipping-card">
+            <div class="front">
+              <img src="https://downloader.disk.yandex.ru/preview/43447b5d7f6ee8dcb3e31e31ddc44afb8186867628b7585704ccf7b73c9b9b57/63309925/SlihW0sKNk7uAM2rlgEcQzwcmTKqnK8DpoF8bRDgUlEIQaS4wQonjTtJiHOsy-XSGIRTb1z51EKHQTj8L2Ay8w%3D%3D?uid=0&filename=42543_Ruslan_Galeev-1.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=2048x2048">
+            </div>
+            <div class="back">
+              <div class="content center">
+                <h2>Aniskovich Anton</h2>
+                <span>123</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      -->
+
+      <section class="main-block anim-items">
+        <h1>Немного проектов</h1>
+        <hr>
+        <div class="table">
+          <div class="table-item project-card">
+            <img src="./img/project/ps.png" alt="">
+            <h2>Камень, ножницы, бумага</h2>
+            <hr>
+            <p>В данном проекте я тестировал PyScript (JavaScript лучше)</p>
+          </div>
+
+          <div class="table-item project-card">
+            <img src="./img/project/op.png" alt="">
+            <h2>Старая верстка</h2>
+            <hr>
+            <p>Проект (какой-то) показывающий мои навыки один год назад</p>
+          </div>
+
+          <div class="table-item project-card">
+            <img src="./img/project/vf.png" alt="">
+            <h2>Верстка по шаблону Figma</h2>
+            <hr>
+            <p>Старая тренировка по верстке</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>
+        Контакты:
+      </div>
+    </footer>
+  </body>
 </html>
