@@ -17,6 +17,11 @@ html, body {
 }
 
 
+p, a {
+    font-size: 1rem;
+}
+
+
 hr {
     color: var(--color-text);
 
