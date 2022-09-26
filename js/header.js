@@ -6,7 +6,7 @@ let position = 0;  // Позиция прилипания шапки
 function header_logic() {
     if (window.pageYOffset >= header.offsetTop && header.offsetTop !== 0)  // Шапка должна прилипнуть?
     {
-        header_.classList.add("active");
+        header_.classList.add("active");  // Заменитель шапки становится активным
         position = header.offsetTop;
         header.classList.add("sticky");
     } else if (position > window.pageYOffset)  // Шапка должна отлипнуть?

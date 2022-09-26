@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Galeev Ruslan</title>
 
+    <!-- Тема -->
     <link rel="stylesheet" type="text/css" href="./css/mode/light.css" id="theme">
     <script src="./js/mode.js" defer></script>
 
@@ -11,27 +12,35 @@
     <script src="./js/anim.js" defer></script>
     <link rel="stylesheet" href="./css/anim.css">
 
-    <link rel="stylesheet" href="./styles.css">
-
+    <!-- Стартовый блок -->
     <link rel="stylesheet" href="./css/start_block.css">
     <script src="./js/start_block.js" defer></script>
 
+    <!-- Шапка -->
     <link rel="stylesheet" href="./css/header.css">
     <script src="./js/header.js" defer></script>
 
+    <!-- Смотрящая карта -->
     <link rel="stylesheet" href="./css/looking_card.css">
     <script src="./js/looking_card.js" defer></script>
 
+    <!-- Таблица -->
     <link rel="stylesheet" href="./css/table.css">
 
+    <!-- Переворачивающаяся карта -->
     <link rel="stylesheet" href="./css/flipping_card.css">
 
+    <!-- Карты проекта -->
     <link rel="stylesheet" href="./css/project_card.css">
 
+    <!-- Подвал -->
     <link rel="stylesheet" href="./css/footer.css">
 
     <!-- Быстрый переход между блоками -->
     <script src="./js/rewind.js" defer></script>
+
+    <!-- Общие стили -->
+    <link rel="stylesheet" href="./css/styles.css">
 
     <!-- Иконки -->
     <link rel="stylesheet"
@@ -46,8 +55,14 @@
 
     <!-- Шапка -->
     <header>
+      <!-- Иконка -->
       <img src="https://i.gifer.com/6oa.gif" alt="icon">
 
+      <!-- Кнопка смены темы -->
+      <button id="switch_mode" class="material-symbols-outlined header-right" title="Сменить тему">
+        brightness_4
+      </button>
+      <!-- Кнопки быстрого перехода -->
       <nav class="rewind header-right">
         <button value="about-me" class="material-symbols-outlined" title="Обо мне">
           person
@@ -62,14 +77,12 @@
           data_object
         </button>
       </nav>
-      <button id="switch_mode" class="material-symbols-outlined header-right" title="Сменить тему">
-        brightness_4
-      </button>
     </header>
     <div id="header"></div>
 
     <!-- Основной блок -->
     <main>
+      <!-- ==================== Обо мне ==================== -->
       <section id="about-me" class="main-block">
         <h1 class="anim-items">Обо мне</h1>
         <hr>
@@ -81,6 +94,7 @@
         <iframe class="map anim-items" src="https://yandex.ru/map-widget/v1/?um=constructor%3A63b7fb842c90a4094722221c1c31e03d73bf1422a65faf315378c8c69812a224&amp;source=constructor" height="400" width="100%"></iframe>
       </section>
 
+      <!-- ==================== Soft&Hard Skills ==================== -->
       <section id="skills" class="main-block">
         <h1 class="anim-items">Soft&Hard Skills</h1>
         <hr>
@@ -101,6 +115,7 @@
               <ul>
                 <li>WebStorm</li>
                 <li>Sublime Text</li>
+                <li>Figma</li>
               </ul>
             </div>
           </div>
@@ -121,11 +136,11 @@
         </div>
       </section>
 
+      <!-- ==================== Достижения ==================== -->
       <section id="achievements" class="main-block">
         <h1 class="anim-items">Достижения Яндекс.Лицея</h1>
         <hr>
         <div class="table">
-
           <div class="table-item flipping-card anim-items">
             <div class="front">
               <img src="./img/achievements/2202.png" alt="2202">
@@ -141,7 +156,6 @@
               </div>
             </div>
           </div>
-
           <div class="table-item flipping-card anim-items">
             <div class="front">
               <img src="./img/achievements/2202.png" alt="2202">
@@ -157,7 +171,6 @@
               </div>
             </div>
           </div>
-
           <div class="table-item flipping-card anim-items">
             <div class="front">
               <img src="./img/achievements/2203.png" alt="2203">
@@ -173,10 +186,10 @@
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
+      <!-- ==================== Проекты ==================== -->
       <section id="projects" class="main-block">
         <h1>Немного проектов</h1>
         <hr>
@@ -185,7 +198,8 @@
             <img src="./img/project/ps.png" alt="">
             <h2>Камень, ножницы, бумага</h2>
             <hr>
-            <p>В данном проекте я тестировал PyScript (JavaScript лучше)</p>
+            <p>В данном <a href="https://stonescissorspaper-pyscript.grusl.repl.co">проекте</a>
+              я тестировал <a href="https://pyscript.net">PyScript</a> (JavaScript лучше)</p>
           </div>
 
           <div class="table-item project-card anim-items">
@@ -212,6 +226,7 @@
       </section>
     </main>
 
+    <!-- Подвал -->
     <footer>
       <h4>Контакты:</h4>
     </footer>

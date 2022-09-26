@@ -64,6 +64,6 @@ header .header-right {
 }
 
 
-.active {
+#header.active {
     height: 74px;
 }
