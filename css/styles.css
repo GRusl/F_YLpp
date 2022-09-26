@@ -26,6 +26,7 @@ hr {
 }
 
 
+/* Стили ссылок */
 a {
     color: var(--color-text); /* Цвет ссылок */
 }
@@ -45,4 +46,16 @@ main .main-block {
 .map {
     width: 100%;
     height: 400px;
+}
+
+
+@media (max-width: 1300px) {
+    main {
+        width: 100%;
+        padding: 5px;
+    }
+
+    main .main-block {
+        margin: 20px 0 20px 0;
+    }
 }

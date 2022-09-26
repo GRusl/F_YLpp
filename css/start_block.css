@@ -14,10 +14,18 @@
     transition: none;
 }
 
+
 #start-block > h1 {
     color: #ffffff;
     position: relative;
     font-size: 10em;
 
     rotate: 10deg;
+}
+
+
+@media (max-width: 1300px) {
+    #start-block > h1 {
+        font-size: 8em;
+    }
 }
