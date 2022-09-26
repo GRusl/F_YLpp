@@ -1,6 +1,8 @@
 .looking-card__inner {
     background-color: var(--color2);
 
+    transition: background-color 0.8s;
+
     height: 100%;
     padding: 10px;
     border-radius: 20px;
