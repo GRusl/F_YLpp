@@ -9,6 +9,8 @@
     cursor: pointer;
     width: 350px;
     height: 500px;
+
+    text-align: center;
 }
 
 .front,
