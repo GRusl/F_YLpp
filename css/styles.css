@@ -19,11 +19,6 @@ html, body {
 }
 
 
-p, a {
-    font-size: 1em;
-}
-
-
 hr {
     color: var(--color-text);
 
